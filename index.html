@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Empire digital Web Designer</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="cur"></div>
+<!-- PROGRESS -->
+<div id="progress"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-text">
+    <span style="animation-delay:.05s">L</span><span style="animation-delay:.1s">O</span><span style="animation-delay:.15s">A</span><span style="animation-delay:.2s">D</span><span style="animation-delay:.25s">I</span><span style="animation-delay:.3s">N</span><span style="animation-delay:.35s">G</span>
+  </div>
+  <div class="loader-bar"></div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-left">
+    <div class="nav-logo-space">
+        <img id="navLogo" src="empire black logo.jpg" alt="Logo" class="nav-logo-img"/>
+        <span class="nav-logo">EMPIRE DIGITAL</span>
+      </div>
+      
+  </div>
+  <button class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+  <canvas id="heroCanvas"></canvas>
+
+  <!-- Rotating badge -->
+  <div class="rotate-badge">
+    <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" width="120" height="120">
+      <path id="circlePath" d="M60,10 a50,50 0 1,1 -0.1,0" fill="none"/>
+      <text font-family="Space Mono" font-size="10" fill="rgba(212,168,67,0.7)" letter-spacing="5">
+        <textPath href="#circlePath">AVAILABLE FOR PROJECTS · 2025 · WEB DESIGNER · </textPath>
+      </text>
+    </svg>
+    <div class="center-dot"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">Web Designer &amp; Digital Strategist — Available 2025</div>
+    <h1 class="hero-name">
+      <span class="filled">Empire</span><br>
+      <span class="gold">Digital.</span>
+    </h1>
+    <div class="hero-bottom">
+      <p class="hero-desc">
+        I build high-converting, visually iconic websites that don't just look expensive, they make brands <em>feel</em> inevitable.
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn-main"><span>Start a Project ↗</span></a>
+        <div class="scroll-badge">Scroll</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-inner">
+    <span>Brand Websites</span><span>★</span>
+    <span>E-Commerce</span><span>★</span>
+    <span>Landing Pages</span><span>★</span>
+    <span>UI/UX Design</span><span>★</span>
+    <span>Shopify</span><span>★</span>
+    <span>Webflow</span><span>★</span>
+    <span>Framer</span><span>★</span>
+    <span>Brand Identity</span><span>★</span>
+    <span>Brand Websites</span><span>★</span>
+    <span>E-Commerce</span><span>★</span>
+    <span>Landing Pages</span><span>★</span>
+    <span>UI/UX Design</span><span>★</span>
+    <span>Shopify</span><span>★</span>
+    <span>Webflow</span><span>★</span>
+    <span>Framer</span><span>★</span>
+    <span>Brand Identity</span><span>★</span>
+  </div>
+</div>
+
+<!-- ═══ ABOUT ═══ -->
+<section id="about" class="section">
+  <div class="s-label">About Me</div>
+  <div class="about-grid">
+    <div class="reveal">
+      <h2 class="about-big">
+        I don't build websites.<br>
+        I build <em>weapons</em><br>
+        for your brand.
+      </h2>
+    </div>
+    <div>
+      <p class="about-para reveal" data-d="1">
+        Based in Ghana, I'm a web designer obsessed with the intersection of beautiful design and ruthless conversion. I've worked with brands across fashion, beauty, tech and lifestyle, each project treated like a product launch, not a deliverable.
+      </p>
+      <p class="about-para reveal" data-d="2">
+        My websites are built to make your competitors uncomfortable. Clean where it needs to be. Bold where it counts. Always, always intentional.
+      </p>
+      <div class="skills-wrap reveal" data-d="3">
+        <div class="skills-label">Tools &amp; Platforms</div>
+        <div class="skills-list">
+          <span class="skill-pill">Figma</span>
+          <span class="skill-pill">Webflow</span>
+          <span class="skill-pill">Framer</span>
+          <span class="skill-pill">Shopify</span>
+          <span class="skill-pill">WordPress</span>
+          <span class="skill-pill">HTML / CSS / JS</span>
+          <span class="skill-pill">GSAP</span>
+          <span class="skill-pill">Three.js</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SERVICES ═══ -->
+<section id="services" class="section">
+  <div class="s-label">Services</div>
+  <div class="services-header">
+    <h2 class="services-title reveal">What I<br>Deliver.</h2>
+    <p class="services-note reveal" data-d="2">Every service is scoped, priced, and executed with precision. No surprises just results.</p>
+  </div>
+  <div class="services-list">
+    <div class="svc reveal">
+      <div class="svc-num">01</div>
+      <div class="svc-info">
+        <div class="svc-name">Brand Websites</div>
+        <div class="svc-tags">
+          <span class="svc-tag">Custom Design</span>
+          <span class="svc-tag">Responsive</span>
+          <span class="svc-tag">SEO Ready</span>
+          <span class="svc-tag">CMS</span>
+        </div>
+      </div>
+  
+    </div>
+    <div class="svc reveal" data-d="1">
+      <div class="svc-num">02</div>
+      <div class="svc-info">
+        <div class="svc-name">E-Commerce Stores</div>
+        <div class="svc-tags">
+          <span class="svc-tag">Shopify</span>
+          <span class="svc-tag">WooCommerce</span>
+          <span class="svc-tag">Checkout UX</span>
+        </div>
+      </div>
+  
+    </div>
+    <div class="svc reveal" data-d="2">
+      <div class="svc-num">03</div>
+      <div class="svc-info">
+        <div class="svc-name">Landing Pages</div>
+        <div class="svc-tags">
+          <span class="svc-tag">High Conversion</span>
+          <span class="svc-tag">A/B Ready</span>
+          <span class="svc-tag">Fast Load</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="svc reveal" data-d="3">
+      <div class="svc-num">04</div>
+      <div class="svc-info">
+        <div class="svc-name">Full Redesigns</div>
+        <div class="svc-tags">
+          <span class="svc-tag">Visual Identity</span>
+          <span class="svc-tag">UI System</span>
+          <span class="svc-tag">Style Guide</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ WORK ═══ -->
+<section id="work" style="padding:8rem 0 0">
+  <div class="work-title reveal">WORK</div>
+  <div class="work-grid">
+    <div class="work-item reveal">
+      <div class="work-placeholder"><span class="work-placeholder-text">PROJECT IMAGE</span></div>
+      <div class="work-item-num">01</div>
+      <div class="work-overlay">
+        <div class="work-item-name">Project Name</div>
+        <div class="work-item-type">Brand Website · Fashion</div>
+      </div>
+      <div class="work-arrow">→</div>
+    </div>
+    <div class="work-item reveal" data-d="1">
+      <div class="work-placeholder"><span class="work-placeholder-text">PROJECT IMAGE</span></div>
+      <div class="work-item-num">02</div>
+      <div class="work-overlay">
+        <div class="work-item-name">Project Name</div>
+        <div class="work-item-type">E-Commerce · Beauty</div>
+      </div>
+      <div class="work-arrow">→</div>
+    </div>
+    <div class="work-item reveal" data-d="2">
+      <div class="work-placeholder"><span class="work-placeholder-text">FEATURED PROJECT — WIDE</span></div>
+      <div class="work-item-num">03</div>
+      <div class="work-overlay">
+        <div class="work-item-name">Featured Project Name</div>
+        <div class="work-item-type">Full Redesign · Tech Brand</div>
+      </div>
+      <div class="work-arrow">→</div>
+    </div>
+    <div class="work-item reveal" data-d="1">
+      <div class="work-placeholder"><span class="work-placeholder-text">PROJECT IMAGE</span></div>
+      <div class="work-item-num">04</div>
+      <div class="work-overlay">
+        <div class="work-item-name">Project Name</div>
+        <div class="work-item-type">Landing Page · Campaign</div>
+      </div>
+      <div class="work-arrow">→</div>
+    </div>
+    <div class="work-item reveal" data-d="2">
+      <div class="work-placeholder"><span class="work-placeholder-text">PROJECT IMAGE</span></div>
+      <div class="work-item-num">05</div>
+      <div class="work-overlay">
+        <div class="work-item-name">Project Name</div>
+        <div class="work-item-type">Shopify · Lifestyle</div>
+      </div>
+      <div class="work-arrow">→</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ STATS ═══ -->
+<div class="stats-band">
+  <div class="stat-block reveal">
+    <div class="stat-num" data-count="47">0</div>
+    <div class="stat-label">Brands Worked With</div>
+  </div>
+  <div class="stat-block reveal" data-d="1">
+    <div class="stat-num" data-count="98">0</div>
+    <div class="stat-label">Client Satisfaction %</div>
+  </div>
+  <div class="stat-block reveal" data-d="2">
+    <div class="stat-num" data-count="3">0</div>
+    <div class="stat-label">Avg. ROI Multiplier</div>
+  </div>
+  <div class="stat-block reveal" data-d="3">
+    <div class="stat-num" data-count="120">0</div>
+    <div class="stat-label">Projects Delivered</div>
+  </div>
+</div>
+
+<!-- ═══ TESTIMONIALS ═══ -->
+<section id="testimonials" class="section">
+  <div class="s-label">What Clients Say</div>
+  <div class="testi-big-q">"</div>
+  <div class="testi-track">
+    <div class="testi active">
+      <p class="testi-quote">"Working with Empire was a game-changer. Our new website increased conversions by 3x within the first month. Not an agency. A weapon."</p>
+      <div class="testi-author">
+        <div class="testi-line"></div>
+        <span class="testi-name">Abbey Louis — CEO/Founder...Built to Last</span>
+      </div>
+    </div>
+    <div class="testi">
+      <p class="testi-quote">"The most talented designer I've worked with. They understood our brand vision immediately and executed it flawlessly. Worth every single penny."</p>
+      <div class="testi-author">
+        <div class="testi-line"></div>
+        <span class="testi-name">Benjamin — Founder, Rehoboth consultancy</span>
+      </div>
+    </div>
+    <div class="testi">
+      <p class="testi-quote">"We've worked with several agencies before. None came close. Empire delivered a luxury brand experience that our competitors can only dream of."</p>
+      <div class="testi-author">
+        <div class="testi-line"></div>
+        <span class="testi-name">Martin — CEO, MK apparels</span>
+      </div>
+    </div>
+  </div>
+  <div class="testi-controls reveal">
+    <button class="testi-btn" id="tPrev">←</button>
+    <button class="testi-btn" id="tNext">→</button>
+  </div>
+</section>
+
+<!-- ═══ BRANDS ═══ -->
+<div class="brands-strip">
+  <span class="brands-label">Previously worked with</span>
+  <div class="brands-names">
+    <span class="brand">Household of prayer internatioal</span>
+    <span class="brand">Built to Last</span>
+    <span class="brand">Louis Vuitton</span>
+    <span class="brand">Gucci</span>
+    <span class="brand">Channel</span>
+  </div>
+</div>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact" class="section">
+  <div class="contact-bg-text">LET'S WORK</div>
+  <div class="contact-inner">
+    <div class="contact-pre reveal">Open for new projects</div>
+    <h2 class="contact-title reveal">
+      Let's<br>
+      Build<br>
+      <em>Something</em><br>
+      <s>Iconic.</s>
+    </h2>
+    <div class="contact-links reveal" data-d="2">
+      <a href="mailto:hello@yourname.com" class="c-link">elormeugenekofi@gmail.com</a>
+      <span class="c-dot">✦</span>
+      <a href="#" class="c-link">mr__geraldo</a>
+      <span class="c-dot">✦</span>
+      <a href="#" class="c-link">elormeugenekofi@gmail.com</a>
+    </div>
+    <a href="elormeugenekofi@gmail.com" class="btn-main reveal" data-d="3" style="font-size:1.2rem;padding:1.1rem 3.5rem;display:inline-block">
+      <span>Email Me Directly ↗</span>
+    </a>
+  </div>
+</section>
+
+<!-- BACK TO TOP BUTTON -->
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="18 15 12 9 6 15"></polyline>
+  </svg>
+</button>
+
+<!-- FOOTER -->
+<footer>
+  <span class="f-logo">YN.</span>
+  <span class="f-copy">© 2025 EMPIRE DIGITAL — All rights reserved</span>
+  <div class="f-links">
+    <a href="#">Instagram</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">Behance</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -746,7 +746,8 @@
   @media (max-width: 768px) {
     #hero{
       padding:0 1.5rem 2rem;
-      margin-top:70px;
+           padding-top: 70px;
+      margin-top:0;
     }
     .hero-name{
       font-size:clamp(3rem,12vw,8rem);

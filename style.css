@@ -169,7 +169,7 @@
   /* ── HERO ── */
   #hero{
     position:relative;
-    min-height:100vh;
+    min-height:auto;
     display:flex;align-items:flex-end;
     padding:0 3rem 4rem;
     overflow:hidden;
